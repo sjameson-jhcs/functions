@@ -1,21 +1,50 @@
-# FIZZ BUZZ
+# The basic functionality of this code is complete, BUT it is not very DRY
+# Your task to refactor this code so that it is DRY
 
-# Your goal is print all the numbers up to a chosen value.
-# However, any number divisible by 3 will be replaced by the word "Fizz"
-# Any number divisible by the number 5 will be replaced by the word "Buzz"
-# Any number divisible by both will be replaced by the word "FizzBuzz"
 
-# 1. Your code should prompt the user to input a number.
-# 2. Start printing every number up to that number with the replacements mentioned above
-# 3. Keep a running list of all numbers that were replaced by Fizz, Buzz, and FizzBuzz separately
-# 4. After the target number is reached, print out the 3 lists
+student_name = input("Student name? ")
+student_name = student_name.strip()  # This will remove any leading or trailing spaces in a string.
+student_name = student_name.title()  # This will capitalize the first letter of each word.
+if not student_name:  # An empty string counts as being false. So this is making sure they typed something.
+    student_name = input("Student name? ")
+    student_name = student_name.strip()
+    student_name = student_name.title()
+print(f"You have entered the student name as {student_name}.")
 
-# Here is an example output for the target number of 16 (Note: yours will probably be on separate lines. That's ok):
-# 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16
-# The Fizz numbers were [3, 6, 9, 12]
-# The Buzz numbers were [5,10]
-# The FizzBuzz numbers were [15]
+parent_or_guardian_name = input("Parent or Guardian name? ")
+parent_or_guardian_name = parent_or_guardian_name.strip()
+parent_or_guardian_name = parent_or_guardian_name.title()
+if not parent_or_guardian_name:
+    parent_or_guardian_name = input("Parent or Guardian name? ")
+    parent_or_guardian_name = parent_or_guardian_name.strip()
+    parent_or_guardian_name = parent_or_guardian_name.title()
+print(f"You have entered the parent or guardian name as {parent_or_guardian_name}.")
 
-# Hint: to determine if a number is divisible by another you can use the modulo function
-# Modulo give the remainder after dividing. The symbol for modulo is %. Here is an example:
-# 10 % 3 == 1
+city_name = input("City? ")
+city_name = city_name.strip()
+city_name = city_name.title()
+if not city_name:
+    city_name = input("City? ")
+    city_name = city_name.strip()
+    city_name = city_name.title()
+print(f"You have entered the city as {city_name}.")
+
+state_name = input("State? ")
+state_name = state_name.strip()
+state_name = state_name.title()
+if not state_name:
+    state_name = input("State? ")
+    state_name = state_name.strip()
+    state_name = state_name.title()
+print(f"You have entered the city as {state_name}.")
+
+country_name = input("Country? ")
+country_name = country_name.strip()
+country_name = country_name.title()
+if not state_name:
+    country_name = input("Country? ")
+    country_name = country_name.strip()
+    country_name = country_name.title()
+print(f"You have entered the country as {country_name}.")
+
+print(f"Thank you for completing the form. Good bye.")
